@@ -165,11 +165,6 @@ Now, install Passport with the following command, which will include all the nec
 `composer require laravel/passport -W`
 
 
-Once Passport is installed, run the following command to create the Passport tables:
-
-`php artisan passport:install`
-
-
 Next, open the **config/auth.php** file. It should look like this:
 
 ![Auth Config](https://github.com/Adornadowilliam2/fullstack-for-dummies/blob/main/assets/Screenshot%202024-11-09%20172400.png?raw=true)
@@ -184,6 +179,10 @@ Change it to look like this:
 ```
 
 ![image look after](https://github.com/Adornadowilliam2/fullstack-for-dummies/blob/main/assets/Screenshot%202024-11-09%20172444.png?raw=true)
+
+Once Passport is installed and **config/auth** has been set,you can now run the following command to create the Passport tables:
+
+`php artisan passport:install`
 
 Then, in the `User model`, add HasApiTokens:
 
