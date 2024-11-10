@@ -167,7 +167,7 @@ Now, install Passport with the following command, which will include all the nec
 
 Once Passport is installed, run the following command to create the Passport tables:
 
-`php artisan install:passport`
+`php artisan passport:install`
 
 
 Next, open the **config/auth.php** file. It should look like this:
