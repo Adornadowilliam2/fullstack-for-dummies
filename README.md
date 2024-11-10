@@ -144,7 +144,7 @@ Then, in the **users** migration file, remove unnecessary fields and change `nam
 
 Back in the terminal, run the following command to install the necessary API dependencies to connect to our frontend:
 
-`php artisan api:install`
+`php artisan install:api`
 
 
 When prompted, type **yes**.
@@ -167,7 +167,7 @@ Now, install Passport with the following command, which will include all the nec
 
 Once Passport is installed, run the following command to create the Passport tables:
 
-`php artisan passport:install`
+`php artisan install:passport`
 
 
 Next, open the **config/auth.php** file. It should look like this:
