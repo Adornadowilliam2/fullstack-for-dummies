@@ -271,4 +271,6 @@ Also, add the following line above the `DatabaseSeeder` class:
 `use Artisan;`
 
 
+
+
 Now you finish doing the backend, Now for the front-end.
