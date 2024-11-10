@@ -165,6 +165,8 @@ Now, install Passport with the following command, which will include all the nec
 `composer require laravel/passport -W`
 
 
+
+
 Next, open the **config/auth.php** file. It should look like this:
 
 ![Auth Config](https://github.com/Adornadowilliam2/fullstack-for-dummies/blob/main/assets/Screenshot%202024-11-09%20172400.png?raw=true)
@@ -180,7 +182,8 @@ Change it to look like this:
 
 ![image look after](https://github.com/Adornadowilliam2/fullstack-for-dummies/blob/main/assets/Screenshot%202024-11-09%20172444.png?raw=true)
 
-Once Passport is installed and **config/auth** has been set,you can now run the following command to create the Passport tables:
+
+Once Passport is installed and **config/auth** been changed,you can now run the following command to create the Passport tables:
 
 `php artisan passport:install`
 
@@ -271,6 +274,25 @@ Also, add the following line above the `DatabaseSeeder` class:
 `use Artisan;`
 
 
-
-
 Now you finish doing the backend, Now for the front-end.
+
+## Issue Possible happen
+
+- if you add this to your version control like github and gitlab then you clone it you need first to create a **.env** then type this command
+
+`php artisan key:generate`
+
+for adding like this 
+
+![image of adding key:generate](https://github.com/Adornadowilliam2/fullstack-for-dummies/blob/main/assets/Screenshot%202024-11-10%20104658.png?raw=true)
+
+- if you have to delete the database for new changes just simply type 
+
+`php artisan migrate:fresh --seed`
+
+this will do to refresh whole thing inside the migration and Database seeder.
+
+
+- also if you don't know how to run this to see it work just type
+
+`php artisan serve`
