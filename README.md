@@ -278,8 +278,9 @@ Now you finish doing the backend, Now for the front-end.
 
 ## Issue Possible happen
 
-- if you add this to your version control like github and gitlab then you clone it you need first to create a **.env** then type this command
 
+- if you add this to your version control like github and gitlab then you clone it you need first to create a **.env** then type this command
+- No application encryption key has been specified.
 `php artisan key:generate`
 
 for adding like this 
